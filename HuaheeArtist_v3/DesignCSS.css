@@ -23,18 +23,16 @@
     z-index: 1;
 }
 
-.slogan{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size:15px;
-    color:white;
-    float:left;
-    padding:13px;
-    padding-right:50px;
+.slogan {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    padding-left:30px;
 }
 
 .slogan:hover{
-    font-size:17px;
-    color:#E9118F;
+    color:grey;
 }
 
 .dropdown-content a {
@@ -66,7 +64,6 @@ body {
 }
 
 .header {
-    overflow: hidden;
     background-color: white;
     padding: 8px;
     width: 100%;
@@ -146,17 +143,6 @@ body {
     width: 100px;
     height: 30px;
     margin-bottom:7px;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    overflow: hidden;
-    background-color: #333;
 }
 
 .textplace {
@@ -258,6 +244,67 @@ body {
         border: 2px solid #808080;
     }
 
-.footer-right{
-
+.company-right {
+    background-image: url("Image/company.png");
+    float: right;
+    height: 100px;
+    width: 100px;
+    background-size: 100% 90%;
+    margin-right: 60px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.underfooter {
+    width: 50%;
+    border: 1px solid;
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    bottom: 0;
+}
+
+.slogansub {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #333;
+    padding: 5px;
+    padding-left:30px;
+    width: 5%;
+}
+
+    .slogansub:hover {
+        color: grey;
+    }
+
+
+.slogansubcover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    padding: 5px;
+    float:right;
+}
+
+.btnbottom {
+    background-color: cadetblue;
+    padding: 13px;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    float:right;
+    transition: 0.3s;
+    margin-right: 25px;
+}
+
+    .btnbottom:hover {
+        background-color: rebeccapurple;
+        color: white;
+    }

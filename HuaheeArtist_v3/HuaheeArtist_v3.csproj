@@ -73,6 +73,11 @@
     <Content Include="Image\logo.png" />
     <Content Include="Image\notification.png" />
     <Content Include="Image\shopping-cart.png" />
+    <Content Include="Image\company.png" />
+    <Content Include="Image\company1.png" />
+    <Content Include="Image\company2.png" />
+    <Content Include="Image\company3.png" />
+    <Content Include="Image\company4.png" />
     <Content Include="Image\wishlist.png" />
     <Content Include="Testing.aspx" />
     <Content Include="Web.config" />

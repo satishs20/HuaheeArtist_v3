@@ -51,11 +51,59 @@
     </div>
 
 
-    <asp:Table ID="table3" CssClass="footer" runat="server" > 
+    
+    <asp:Table ID="table4" CssClass="underfooter" runat="server" > 
         <asp:TableRow runat="server">  
-            <asp:TableCell runat="server"><div class="slogan"><h2>A New Art, A New Life</h2></div></asp:TableCell>
-            <asp:TableCell runat="server" CssClass="thheader-right"><button class="btn">Sign Up</button></asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogan"><h2>A New Art, A New Life</h2></asp:TableCell>
         </asp:TableRow>  
+        <asp:TableRow runat="server">  
+            <asp:TableCell runat="server" CssClass="slogansub">HuaheeArtist Business</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Careers</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Terms</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" ><button class="btnbottom">Join As Artist</button></asp:TableCell>
+        </asp:TableRow> 
+        <asp:TableRow runat="server">  
+            <asp:TableCell runat="server" CssClass="slogansub">Teach on Udemy</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Blog</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Privacy policy</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+        </asp:TableRow> 
+        <asp:TableRow runat="server">  
+            <asp:TableCell runat="server" CssClass="slogansub">Get the app</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Help and Support</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Cookie settings</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+        </asp:TableRow>
+        <asp:TableRow runat="server">  
+            <asp:TableCell runat="server" CssClass="slogansub">About Us</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Affiliate</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Sitemap</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+        </asp:TableRow> 
+        <asp:TableRow runat="server">  
+            <asp:TableCell runat="server" CssClass="slogansub">Contact us</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Investors</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">Accessibility statement</asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+        </asp:TableRow> 
+        <asp:TableRow runat="server">  
+            <asp:TableCell runat="server" CssClass="slogansub"><img src="Image/logo.png" alt="LogoHuaheeArtist" class="logo"></asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub"></asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub"></asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansubcover">&#169; 2022 HuaHee, Inc.</asp:TableCell>
+        </asp:TableRow> 
     </asp:Table>
 </body>
 </html>
