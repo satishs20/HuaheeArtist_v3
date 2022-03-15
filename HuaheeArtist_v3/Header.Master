@@ -51,10 +51,11 @@
     </div>
 
 
-    <div class="footer">
-        <h1>
-            This is footer content
-        </h1>
-    </div>
+    <asp:Table ID="table3" CssClass="footer" runat="server" > 
+        <asp:TableRow runat="server">  
+            <asp:TableCell runat="server"><div class="slogan"><h2>A New Art, A New Life</h2></div></asp:TableCell>
+            <asp:TableCell runat="server" CssClass="thheader-right"><button class="btn">Sign Up</button></asp:TableCell>
+        </asp:TableRow>  
+    </asp:Table>
 </body>
 </html>
