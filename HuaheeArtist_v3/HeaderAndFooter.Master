@@ -1,20 +1,21 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.master.cs" Inherits="HuaheeArtist_v3.Header" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HeaderAndFooter.master.cs" Inherits="HuaheeArtist_v3.HeaderAndFooter" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
     <title></title>
+    <link href="HeaderAndFooterCss.css" rel="stylesheet" />
+    <script src="DesignFunction.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="DesignCSS.css" rel="stylesheet" />
-    <script src="DesignFunction.js"></script>
 </head>
 <body>
-    <asp:Table ID="table1" CssClass="header" runat="server" >  
-    <asp:TableRow runat="server">  
-        <asp:TableCell runat="server" CssClass="headerthcolumn"><img src="Image/logo.png" alt="LogoHuaheeArtist" class="logo"></asp:TableCell>  
-        <asp:TableCell runat="server" CssClass="thcolumn">
+    <form id="form1" runat="server">
+        <div>
+            <div class="flex-container">
+                <div><img src="Images/logo.png" alt="LogoHuaheeArtist" class="logo"></div>
+                <div><asp:TableCell runat="server">
             <div class="dropdown">
                 <button class="dropbtn">Category</button>
                 <div class="dropdown-content">
@@ -30,29 +31,30 @@
                     <a href="#">Street art</a>
                 </div>
             </div>
-        </asp:TableCell>  
-        <asp:TableCell runat="server" Width="42%"><input type="text" name="search" class="textplace" placeholder="Search.."></asp:TableCell> 
-        <asp:TableCell runat="server" >
-            <button type="button" class="cart"></button>
-            </asp:TableCell>
-        <asp:TableCell runat="server" >
-            <button type="button" class="wish"></button>
-            </asp:TableCell>
-        <asp:TableCell runat="server" CssClass="thheader-right"><button class="btn">Sign Up</button></asp:TableCell>
-        <asp:TableCell runat="server" CssClass="thheader-right" ><button class="btnNormal">Log In</button></asp:TableCell>
-        <asp:TableCell runat="server" >
-            <button type="button" class="announcement"></button>
-            </asp:TableCell>
-    </asp:TableRow>  
-        </asp:Table>
-    <div style="min-height: 500px">
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        </asp:ContentPlaceHolder>
-    </div>
+        </asp:TableCell>  </div>
+                <asp:TextBox ID="TextBox1" runat="server" CssClass="textplace" OnTextChanged="TextBox1_TextChanged"> </asp:TextBox>
+                <div><asp:Button ID="search" runat="server" CssClass="search" OnClientClick="search_Click" OnClick="search_Click" /></div>
+                <div><asp:Button ID="shoppingcart" runat="server" CssClass="cart" OnClick="shoppingcart_Click"/></div>
+                <div><asp:Button ID="wishlist" runat="server" CssClass="wish" OnClick="Button2_Click"/></div>
+                <div><asp:Button ID="signup" runat="server" Text="Sign Up" CssClass="btn" OnClick="signup_Click"/></div>
+                <div><asp:Button ID="login" runat="server" Text="Log In" CssClass="btnNormal"/></div>
+                 <div class="dropdown">
+                     <asp:Button ID="userIcon" runat="server" Text="Button" CssClass="userbtn"/>
+                <div class="dropdown-content">
+                    <a href="#">Your Profile</a>
+                    <a href="#">Change Your Password</a>
+                    <a href="#">Log Out</a>
+                </div>
+            </div>
 
+                <div><asp:Button ID="annountment" runat="server" CssClass="announcement"/></div>
+            </div>>
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
-    
-    <asp:Table ID="table4" CssClass="underfooter" runat="server" > 
+            </asp:ContentPlaceHolder>
+
+            <asp:Table ID="table4" CssClass="underfooter" runat="server" > 
         <asp:TableRow runat="server">  
             <asp:TableCell runat="server" CssClass="slogan"><h2>A New Art, A New Life</h2></asp:TableCell>
         </asp:TableRow>  
@@ -60,8 +62,6 @@
             <asp:TableCell runat="server" CssClass="slogansub">HuaheeArtist Business</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Careers</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Terms</asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
             <asp:TableCell runat="server" ><button class="btnbottom">Join As Artist</button></asp:TableCell>
         </asp:TableRow> 
         <asp:TableRow runat="server">  
@@ -69,15 +69,11 @@
             <asp:TableCell runat="server" CssClass="slogansub">Blog</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Privacy policy</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
         </asp:TableRow> 
         <asp:TableRow runat="server">  
             <asp:TableCell runat="server" CssClass="slogansub">Get the app</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Help and Support</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Cookie settings</asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
         </asp:TableRow>
         <asp:TableRow runat="server">  
@@ -85,25 +81,22 @@
             <asp:TableCell runat="server" CssClass="slogansub">Affiliate</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Sitemap</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
         </asp:TableRow> 
         <asp:TableRow runat="server">  
             <asp:TableCell runat="server" CssClass="slogansub">Contact us</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Investors</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">Accessibility statement</asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
         </asp:TableRow> 
         <asp:TableRow runat="server">  
-            <asp:TableCell runat="server" CssClass="slogansub"><img src="Image/logo.png" alt="LogoHuaheeArtist" class="logo"></asp:TableCell>
+            <asp:TableCell runat="server" CssClass="slogansub"><img src="Images/logo.png" alt="LogoHuaheeArtist" class="logo"></asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub"></asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansub"></asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
-            <asp:TableCell runat="server" CssClass="slogansub">    </asp:TableCell>
             <asp:TableCell runat="server" CssClass="slogansubcover">&#169; 2022 HuaHee, Inc.</asp:TableCell>
         </asp:TableRow> 
     </asp:Table>
+
+        </div>
+    </form>
 </body>
 </html>
